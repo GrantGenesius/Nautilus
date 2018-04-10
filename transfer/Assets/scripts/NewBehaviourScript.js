@@ -24,7 +24,7 @@ function OnMouseDrag () {
     var curScreenSpace = Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z);    
  
     //convert the screen mouse position to world point and adjust with offset
-    var curPosition = Camera.main.ScreenToWorldPoint(curScreenSpace) + offset;
+    var curPosition = Camera.main.ScreenToWorldPoint(curScreenSpace) + offset + Vector3.up;
  
     //update the position of the object in the world
     transform.position = curPosition;

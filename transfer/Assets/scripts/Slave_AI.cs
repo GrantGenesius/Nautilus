@@ -26,7 +26,15 @@ public class Slave_AI : MonoBehaviour {
         SetDestination();
     }
 
-    private void SetDestination(){
+    void OnCollisionEnter(Collision coll)
+    {
+        if (coll.gameObject.name == "Magic_cube")
+        {
+            
+        }
+    }
+
+    void SetDestination(){
         if(_destination != null){
             Vector3 targetVector = _destination.transform.position;
             _navMeshAgent.SetDestination(targetVector);
