@@ -25,7 +25,7 @@ public class death_counter : MonoBehaviour {
         }
         if (death_count >= 10)
         {
-            loststage();
+            //loststage();
         }
     }
 
@@ -35,6 +35,6 @@ public class death_counter : MonoBehaviour {
     }
 
     void set_dead(){
-        deadslave.text = "Dead slaves : " + death_count.ToString();
+        deadslave.text =  death_count.ToString();
     }
 }

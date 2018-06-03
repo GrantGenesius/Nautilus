@@ -7,11 +7,14 @@ using UnityEngine.SceneManagement;
 public class Secured_count : MonoBehaviour {
     public Text securedslave;
     public static int secured_count;
-
+    public GameObject spawnedobject;
+    public GameObject spawnedobject2;
+    string asd;
+    int x = 0;
 
     void Start(){
         secured_count = 0;
-        set_secured();
+        set_secured(asd);
     }
 
     void Update(){
@@ -20,13 +23,23 @@ public class Secured_count : MonoBehaviour {
 
     void OnCollisionEnter(Collision coll) {
         //escape
-        if (coll.gameObject.name == "slave_03") {
+        if (coll.gameObject.name == "human circle(Clone)" || coll.gameObject.name == "human_G circle(Clone)") {
+            Debug.Log("HIT");
             secured_count += 1;
-            set_secured();
+            set_secured(coll.gameObject.name);
         }
         if (secured_count >= 10){
-            endstage();
+            //endstage();
         }
+
+        
+    }
+
+    void poof() {
+        Instantiate(spawnedobject, transform.position, transform.rotation);
+    }
+    void poof2() {
+        Instantiate(spawnedobject2, transform.position, transform.rotation);
     }
 
     void endstage() {
@@ -35,7 +48,15 @@ public class Secured_count : MonoBehaviour {
 
     }
 
-    void set_secured() {
-        securedslave.text = "Secured slaves : " + secured_count.ToString();
+    void set_secured(string spawnobjectname) {
+        securedslave.text = secured_count.ToString();
+        if (spawnobjectname == "human circle(Clone)")
+        {
+            poof();
+        }
+        if (spawnobjectname == "human_G circle(Clone)")
+        {
+            poof2();
+        }
     }
 }

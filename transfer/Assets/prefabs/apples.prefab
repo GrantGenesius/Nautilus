@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114552866814294122}
   m_Layer: 0
   m_Name: apples
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c4aed40b1878c4180ece6045a40493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 20
+  lifetime: 15
 --- !u!114 &114698617116518784
 MonoBehaviour:
   m_ObjectHideFlags: 1

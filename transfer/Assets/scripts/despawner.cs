@@ -24,7 +24,7 @@ public class despawner : MonoBehaviour {
             Living_counter.living_count -= 1;
         }
         //secure
-        if (coll.gameObject.name == "safe")
+        if (coll.gameObject.name == "Safe")
         {
             Destruction();
             Living_counter.living_count -= 1;
