@@ -19,7 +19,8 @@ public class escape_counter : MonoBehaviour {
 
     void OnCollisionEnter(Collision coll){
         //escape
-        if (coll.gameObject.name == "slave_03") {
+        if (coll.gameObject.name == "human circle(Clone)" || coll.gameObject.name == "human_G circle(Clone)")
+        {
             escape_count += 1;
             set_escaped();
         }
@@ -27,6 +28,6 @@ public class escape_counter : MonoBehaviour {
 
    
     void set_escaped(){
-        escapedslave.text = "Escaped slaves : " + escape_count.ToString();
+        escapedslave.text = escape_count.ToString();
     }
 }

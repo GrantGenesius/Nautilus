@@ -10,7 +10,8 @@ public class Improved_AI : MonoBehaviour
     public ThirdPersonCharacter character;
     public string target_tag;
     public string target_tag2;
-    int a;
+    public int a;
+    
 
     //[SerializeField]
     Transform _destination2;
@@ -35,15 +36,28 @@ public class Improved_AI : MonoBehaviour
         }
     }
 
-    void GoToNearest()
+    public void GoToNearest()
     {
         //if (_destination2 != null)
         //{
-            Vector3 targetVector = FindClosestObject().transform.position;//_destination2.transform.position;
-            Vector3 defaultVector = FindClosestEscape().transform.position;
+           //_destination2.transform.position;
+
+           //a = GetComponent<right_click_ray>().b;
+           //var newgameobject = GameObject.Find("gos");
+
+            //if(gos.length == 0){
+        Vector3 defaultVector = FindClosestEscape().transform.position;
+        _navMeshAgent2.SetDestination(defaultVector);
+            //}
             
-            //_navMeshAgent2.SetDestination(defaultVector);
-            _navMeshAgent2.SetDestination(targetVector);
+            //a = GameObject.Find("FindClosestObject").GetComponent<>().gos.length;
+
+           
+                Vector3 targetVector = FindClosestObject().transform.position;
+                _navMeshAgent2.SetDestination(targetVector);
+                
+            
+            
     }
 
     public GameObject FindClosestObject()    
@@ -52,11 +66,12 @@ public class Improved_AI : MonoBehaviour
         gos = GameObject.FindGameObjectsWithTag(target_tag);
         
         GameObject closest = null;
-        //float distance = 50;
-        float distance = Mathf.Infinity;
+        float distance = 50;
+        //float distance = Mathf.Infinity;
         Vector3 position = transform.position;
         foreach (GameObject go in gos)
         {
+            a += 1; 
             Vector3 diff = go.transform.position - position;
             float curDistance = diff.sqrMagnitude;
             if (curDistance < distance)

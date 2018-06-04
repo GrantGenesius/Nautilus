@@ -52,10 +52,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LowMan\Scripts\ThirdPersonCharacter.cs" />
+     <Compile Include="Assets\Scripts\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\ButtonAnimator.cs" />
      <Compile Include="Assets\Scripts\death_counter.cs" />
      <Compile Include="Assets\Scripts\delete_spawn.cs" />
      <Compile Include="Assets\Scripts\despawner.cs" />
      <Compile Include="Assets\Scripts\escape_counter.cs" />
+     <Compile Include="Assets\Scripts\GateMove.cs" />
+     <Compile Include="Assets\Scripts\Gear_rotator.cs" />
      <Compile Include="Assets\Scripts\Improved_AI.cs" />
      <Compile Include="Assets\Scripts\invoke_spawner.cs" />
      <Compile Include="Assets\Scripts\Living_counter.cs" />
@@ -64,6 +68,7 @@
      <Compile Include="Assets\Scripts\right_click_ray.cs" />
      <Compile Include="Assets\Scripts\Secured_count.cs" />
      <Compile Include="Assets\Scripts\Slave_AI.cs" />
+     <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\WASD_movement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

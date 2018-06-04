@@ -12,6 +12,7 @@ public class right_click_ray : MonoBehaviour {
     public int apple_cost = 100;
     public int coin_cost = 300;
     public float gainz = 50;
+    public int b;
 
     public Image currentBarlevel;
     //public Text barpercent;
@@ -47,6 +48,8 @@ public class right_click_ray : MonoBehaviour {
                     RigidPrefab = Instantiate(Prefab, hit.point + Vector3.up / 2, Quaternion.Euler(-90, 0, 0));
                     resources -= apple_cost;
                     reducebar(apple_cost);
+                    b += 1;
+                    //Invoke("GoToNearest",2);
                 }
             }
         }
@@ -70,6 +73,7 @@ public class right_click_ray : MonoBehaviour {
                     RigidPrefab2 = Instantiate(Prefab_c, hit.point + Vector3.up / 2, Quaternion.Euler(-45, -45, -45));
                     resources -= coin_cost;
                     reducebar(coin_cost);
+                    b += 1;
                 }
             }
         }

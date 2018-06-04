@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Living_counter : MonoBehaviour {
-    /////////  public Text livingslave;
-    public static int living_count;
+    public Text livingslave;
+    public static int living_count = 0;
 	// Use this for initialization
 	void Start () {
-        living_count = 28;
-        //set_living();
+        //living_count = 28;
+        set_living();
 	}
 	
 	// Update is called once per frame
@@ -18,6 +18,6 @@ public class Living_counter : MonoBehaviour {
 	}
 
     void set_living() {
-        /////// livingslave.text = "Roaming slaves : " + living_count.ToString();
+        livingslave.text = living_count.ToString();
     }
 }

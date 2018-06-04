@@ -10,6 +10,7 @@ public class Secured_count : MonoBehaviour {
     public GameObject spawnedobject;
     public GameObject spawnedobject2;
     string asd;
+    public int win_condition = 10;
     int x = 0;
 
     void Start(){
@@ -28,7 +29,7 @@ public class Secured_count : MonoBehaviour {
             secured_count += 1;
             set_secured(coll.gameObject.name);
         }
-        if (secured_count >= 10){
+        if (secured_count >= win_condition){
             //endstage();
         }
 

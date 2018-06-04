@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class invoke_spawner : MonoBehaviour {
 
@@ -13,10 +14,12 @@ public class invoke_spawner : MonoBehaviour {
 	void Start () {
         
         InvokeRepeating("spawn_slave", spawn_timeWait, spawn_interval);
+        //set_living();
 	}
 
     void spawn_slave() {
         Instantiate(spawnee, transform.position, transform.rotation);
+        Living_counter.living_count += 1;
         i += 1;
         if(i>=10){
             stop_spawning = true;
@@ -24,6 +27,15 @@ public class invoke_spawner : MonoBehaviour {
         if (stop_spawning) {
             CancelInvoke("spawn_slave");
         }
+    }
+
+    void update(){
+        //set_living();
+    }
+
+    void set_living()
+    {
+        //roaming.text = Living_count.ToString();
     }
 
 
