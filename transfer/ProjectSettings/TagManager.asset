@@ -8,6 +8,8 @@ TagManager:
   - Gold
   - Human
   - Escape
+  - doom
+  - Safe
   layers:
   - Default
   - TransparentFX

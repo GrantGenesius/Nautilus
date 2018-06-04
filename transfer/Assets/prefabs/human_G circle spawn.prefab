@@ -1035,8 +1035,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 114745507504186582}
-  target_tag: 
-  target_tag2: 
+  target_tag: Goal_box
+  target_tag2: Goal_box
+  a: 0
 --- !u!136 &136599688761451362
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -9,6 +9,8 @@ public class Secured_count : MonoBehaviour {
     public static int secured_count;
     public GameObject spawnedobject;
     public GameObject spawnedobject2;
+    public GameObject spawnedobject3;
+    public GameObject spawnedobject4;
     string asd;
     public int win_condition = 10;
     int x = 0;
@@ -24,9 +26,11 @@ public class Secured_count : MonoBehaviour {
 
     void OnCollisionEnter(Collision coll) {
         //escape
-        if (coll.gameObject.name == "human circle(Clone)" || coll.gameObject.name == "human_G circle(Clone)") {
+        if (coll.gameObject.name == "human circle(Clone)" || coll.gameObject.name == "human_G circle(Clone)" || coll.gameObject.name == "human_D circle(Clone)" || coll.gameObject.name == "human_B circle(Clone)")
+        {
             Debug.Log("HIT");
             secured_count += 1;
+            right_click_ray.resources += 150;
             set_secured(coll.gameObject.name);
         }
         if (secured_count >= win_condition){
@@ -37,10 +41,18 @@ public class Secured_count : MonoBehaviour {
     }
 
     void poof() {
+        x += 1;
         Instantiate(spawnedobject, transform.position, transform.rotation);
     }
     void poof2() {
         Instantiate(spawnedobject2, transform.position, transform.rotation);
+    }
+    void poof3()
+    {
+        Instantiate(spawnedobject3, transform.position, transform.rotation);
+    }
+    void poof4() {
+        Instantiate(spawnedobject4, transform.position, transform.rotation);
     }
 
     void endstage() {
@@ -58,6 +70,14 @@ public class Secured_count : MonoBehaviour {
         if (spawnobjectname == "human_G circle(Clone)")
         {
             poof2();
+        } 
+        if (spawnobjectname == "human_D circle(Clone)")
+        {
+            poof3();
         }
+        if (spawnobjectname == "human_B circle(Clone)"){
+            poof4();
+        }
+
     }
 }

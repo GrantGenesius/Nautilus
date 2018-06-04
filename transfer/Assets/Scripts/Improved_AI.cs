@@ -66,7 +66,7 @@ public class Improved_AI : MonoBehaviour
         gos = GameObject.FindGameObjectsWithTag(target_tag);
         
         GameObject closest = null;
-        float distance = 50;
+        float distance = 75;
         //float distance = Mathf.Infinity;
         Vector3 position = transform.position;
         foreach (GameObject go in gos)

@@ -9,9 +9,9 @@ public class right_click_ray : MonoBehaviour {
     public Rigidbody Prefab;
     public Rigidbody Prefab_c;
     public static float resources = 5000;
-    public int apple_cost = 100;
-    public int coin_cost = 300;
-    public float gainz = 50;
+    public int apple_cost = 250;
+    public int coin_cost = 500;
+    public float gainz = 2;
     public int b;
 
     public Image currentBarlevel;

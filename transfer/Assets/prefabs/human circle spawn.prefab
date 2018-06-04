@@ -1016,8 +1016,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 114927969125086264}
-  target_tag: 
-  target_tag2: 
+  target_tag: Goal_box
+  target_tag2: Goal_box
+  a: 0
 --- !u!114 &114927969125086264
 MonoBehaviour:
   m_ObjectHideFlags: 1

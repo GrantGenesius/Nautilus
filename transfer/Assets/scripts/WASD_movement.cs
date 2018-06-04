@@ -16,9 +16,9 @@ public class WASD_movement : MonoBehaviour {
 	void Update () {
         transform.position = new Vector3
             (
-            Mathf.Clamp(transform.position.x, -15, 15),
-            Mathf.Clamp(transform.position.y, 5, 15), 
-            Mathf.Clamp(transform.position.z, -15, 15)
+            Mathf.Clamp(transform.position.x, -25, 25),
+            Mathf.Clamp(transform.position.y, 5, 25), 
+            Mathf.Clamp(transform.position.z, -25, 25)
             );
 
         float hori = Input.GetAxis("Horizontal");

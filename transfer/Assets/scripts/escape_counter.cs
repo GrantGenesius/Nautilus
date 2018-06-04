@@ -19,7 +19,7 @@ public class escape_counter : MonoBehaviour {
 
     void OnCollisionEnter(Collision coll){
         //escape
-        if (coll.gameObject.name == "human circle(Clone)" || coll.gameObject.name == "human_G circle(Clone)")
+        if (coll.gameObject.name == "human circle(Clone)" || coll.gameObject.name == "human_G circle(Clone)" || coll.gameObject.name == "human_D circle(Clone)")
         {
             escape_count += 1;
             set_escaped();

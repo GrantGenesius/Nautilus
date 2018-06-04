@@ -19,7 +19,8 @@ public class death_counter : MonoBehaviour {
 
     void OnCollisionEnter(Collision coll){
         //death
-        if (coll.gameObject.name == "slave_03"){
+        if (coll.gameObject.name == "human circle(Clone)" || coll.gameObject.name == "human_G circle(Clone)" || coll.gameObject.name == "human_D circle(Clone)")
+        {
             death_count += 1;
             set_dead();
         }
@@ -30,8 +31,8 @@ public class death_counter : MonoBehaviour {
     }
 
     void loststage() {
-        Debug.Log("Level lost!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        //Debug.Log("Level lost!");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     void set_dead(){
