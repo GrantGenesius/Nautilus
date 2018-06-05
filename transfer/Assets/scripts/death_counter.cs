@@ -19,20 +19,21 @@ public class death_counter : MonoBehaviour {
 
     void OnCollisionEnter(Collision coll){
         //death
-        if (coll.gameObject.name == "human circle(Clone)" || coll.gameObject.name == "human_G circle(Clone)" || coll.gameObject.name == "human_D circle(Clone)")
+        if (coll.gameObject.name == "human circle(Clone)" || coll.gameObject.name == "human_G circle(Clone)" || coll.gameObject.name == "human_D circle(Clone)" || coll.gameObject.name == "human_B circle(Clone)")
         {
             death_count += 1;
             set_dead();
         }
-        if (death_count >= 10)
+        if (death_count + escape_counter.escape_count >= Living_counter.max_living_count / 2)
         {
-            //loststage();
+            loststage();
         }
     }
 
     void loststage() {
         //Debug.Log("Level lost!");
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        //SceneManager.LoadScene(6);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 8);
     }
 
     void set_dead(){

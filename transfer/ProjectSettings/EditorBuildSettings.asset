@@ -5,15 +5,57 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 75f7449d0894d5043b1ae600d72ba2cd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/slavegame.unity
     guid: f3b012c730b7acb49aa1e52cfa1bbe5b
+  - enabled: 1
+    path: Assets/Scenes/New main menu.unity
+    guid: 5958af121957368489ad56bcb4f9d15d
+  - enabled: 1
+    path: Assets/Scenes/select level.unity
+    guid: bedba61b017b9064a9e00e1d056bb59b
+  - enabled: 1
+    path: Assets/Scenes/sample level.unity
+    guid: 550748e1ea7ed6d4184ba5196c210741
+  - enabled: 1
+    path: Assets/Scenes/level 2.unity
+    guid: a3372330bbbc5904ea872791b206b5e1
+  - enabled: 1
+    path: Assets/Scenes/level 3.unity
+    guid: 9001b87b48d5d454d9ee9357df98a11c
   - enabled: 1
     path: Assets/Scenes/Win Scene.unity
     guid: d175ed316513b0b47ae7bf6ebcbb76ea
   - enabled: 1
     path: Assets/Scenes/lose scene.unity
     guid: 611b30379c105a3429e43637e1547e2d
+  - enabled: 1
+    path: Assets/Scenes/How to Play 2.unity
+    guid: 4b4848c98d4953949877c35c232e875f
+  - enabled: 1
+    path: Assets/Scenes/How to Play.unity
+    guid: a43c2e88ae15d054c9d5ec00fa417fa8
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 25d6dfa6188af244182a3e603b2e65f6
+  - enabled: 1
+    path: Assets/Scenes/lose scene 1.unity
+    guid: f8dd98f8464e41a46b7e5954c674b7df
+  - enabled: 1
+    path: Assets/Scenes/lose scene 2.unity
+    guid: f624d41e06ad7ac46a79a9c75a680064
+  - enabled: 1
+    path: Assets/Scenes/lose scene 3.unity
+    guid: 298261b10c3646149ac84a4e3ebff98a
+  - enabled: 1
+    path: Assets/Scenes/Win Scene 1.unity
+    guid: e298b2bbd1d393f44b00c640da196be1
+  - enabled: 1
+    path: Assets/Scenes/Win Scene 2.unity
+    guid: d5b5dff85317e49438ca97143553cba6
+  - enabled: 1
+    path: Assets/Scenes/Win Scene 3.unity
+    guid: 04993e4deed457a46b2a7c0e585f45f3

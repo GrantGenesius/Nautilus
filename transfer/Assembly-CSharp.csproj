@@ -60,10 +60,12 @@
      <Compile Include="Assets\Scripts\escape_counter.cs" />
      <Compile Include="Assets\Scripts\GateMove.cs" />
      <Compile Include="Assets\Scripts\Gear_rotator.cs" />
+     <Compile Include="Assets\Scripts\HowToMenu.cs" />
      <Compile Include="Assets\Scripts\Improved_AI.cs" />
      <Compile Include="Assets\Scripts\invoke_spawner.cs" />
      <Compile Include="Assets\Scripts\Living_counter.cs" />
      <Compile Include="Assets\Scripts\Main_menu.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Resource_bar.cs" />
      <Compile Include="Assets\Scripts\right_click_ray.cs" />
      <Compile Include="Assets\Scripts\Secured_count.cs" />

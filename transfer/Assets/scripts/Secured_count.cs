@@ -33,8 +33,8 @@ public class Secured_count : MonoBehaviour {
             right_click_ray.resources += 150;
             set_secured(coll.gameObject.name);
         }
-        if (secured_count >= win_condition){
-            //endstage();
+        if (secured_count >= Living_counter.max_living_count/2){
+            endstage();
         }
 
         
@@ -57,7 +57,7 @@ public class Secured_count : MonoBehaviour {
 
     void endstage() {
         Debug.Log("Level won!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 11);
 
     }
 
