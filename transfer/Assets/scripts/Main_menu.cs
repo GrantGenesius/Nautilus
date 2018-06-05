@@ -10,6 +10,7 @@ public class Main_menu : MonoBehaviour {
         SceneManager.LoadScene(0);
     }
     public void play_game() {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }
     public void gotolevel1()
@@ -29,22 +30,27 @@ public class Main_menu : MonoBehaviour {
     }
     public void gotowinscreen()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(5);
     }
     public void gotolosescreen()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(6);
     }
     public void howtogameplay()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(7);
     }
     public void howtocontrol()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(8);
     }
     public void credits()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(9);
     }
 
@@ -56,26 +62,31 @@ public class Main_menu : MonoBehaviour {
 
     public void Retry_stage()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 11);
     }
 
     public void Next_stage()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 10);
     }
 
     public void Back_toMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     public void Retry_Failed_stage()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 8);
     }
 
     public void Back_Failed_toMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
     }
 
