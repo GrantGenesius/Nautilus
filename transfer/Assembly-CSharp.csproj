@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\HowToMenu.cs" />
      <Compile Include="Assets\Scripts\Improved_AI.cs" />
      <Compile Include="Assets\Scripts\invoke_spawner.cs" />
+     <Compile Include="Assets\Scripts\LevelChanger.cs" />
      <Compile Include="Assets\Scripts\Living_counter.cs" />
      <Compile Include="Assets\Scripts\Main_menu.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />

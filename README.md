@@ -17,3 +17,7 @@ current available features:
 -apple or other dead objects can disappear after a few seconds
 
 -drag and drop a few objects (apples, slaves, etc, just add the new behaviour script)
+
+-added menu, sound, transitions
+
+-bug fixes, menu polishing, toon shader trial, gameplay issues fixing coming soon
